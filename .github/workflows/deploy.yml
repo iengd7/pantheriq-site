@@ -23,5 +23,4 @@ jobs:
         with:
           path: .
       - uses: actions/deploy-pages@v4
-      - id: deployment
-        run: echo "done"
+        id: deployment
