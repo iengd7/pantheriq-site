@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>PantherIQ CLI Logo Proposal</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #050505;
+        --panel: #0d0d0d;
+        --text: #f5f1e8;
+        --muted: rgba(245, 241, 232, 0.64);
+        --orange: #e86f2a;
+        --blue: #00f5ff;
+        --yellow: #ffe600;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100svh;
+        background:
+          radial-gradient(circle at 20% 0%, rgba(232, 111, 42, 0.12), transparent 34rem),
+          radial-gradient(circle at 90% 14%, rgba(0, 245, 255, 0.1), transparent 30rem),
+          var(--bg);
+        color: var(--text);
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          "Liberation Mono",
+          monospace;
+      }
+
+      main {
+        width: min(1160px, 100%);
+        margin: 0 auto;
+        padding: max(22px, env(safe-area-inset-top)) 14px max(24px, env(safe-area-inset-bottom));
+      }
+
+      header {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      .eyebrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--orange);
+        box-shadow: 0 0 16px rgba(232, 111, 42, 0.72);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(22px, 8vw, 56px);
+        line-height: 0.98;
+        letter-spacing: -0.035em;
+      }
+
+      p {
+        max-width: 72ch;
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .frame {
+        margin-top: 18px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        background: var(--panel);
+        box-shadow:
+          0 24px 80px rgba(0, 0, 0, 0.42),
+          0 0 0 1px rgba(0, 245, 255, 0.04);
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .legend {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .legend span {
+        display: flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        background: #080808;
+        color: var(--muted);
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .orange {
+        color: var(--orange);
+      }
+
+      .blue {
+        color: var(--blue);
+      }
+
+      .yellow {
+        color: var(--yellow);
+      }
+
+      @media (max-width: 640px) {
+        main {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        .legend {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow"><span class="dot"></span> PantherIQ logo proposal · CLI security route</div>
+        <h1><span class="orange">P</span> Prompt / <span class="blue">Secure</span> Cell</h1>
+        <p>
+          Focused refinement of the simple P-square direction: cybersecurity and AI expressed as a terminal command cell,
+          using loud orange, cyber blue, and alert yellow.
+        </p>
+      </header>
+
+      <section class="frame" aria-label="PantherIQ CLI logo proposal board">
+        <img
+          src="./pantheriq-cli-logo-board.png"
+          alt="PantherIQ CLI logo proposal board with eight simple P Prompt and Secure P Cell marks"
+        />
+        <div class="legend" aria-hidden="true">
+          <span><strong class="orange">Orange</strong>&nbsp;command energy</span>
+          <span><strong class="blue">Blue</strong>&nbsp;cyber signal</span>
+          <span><strong class="yellow">Yellow</strong>&nbsp;alert cursor</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
