@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>PantherIQ Color Moodboard</title>
+    <title>PantherIQ Color And Logo Ideas</title>
     <style>
       :root {
         color-scheme: dark;
@@ -86,6 +86,13 @@
         line-height: 1.62;
       }
 
+      h2 {
+        margin: 0;
+        font-size: clamp(18px, 5vw, 34px);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+
       .orange {
         color: var(--orange);
       }
@@ -107,6 +114,39 @@
         box-shadow:
           0 26px 90px rgba(0, 0, 0, 0.52),
           0 0 0 1px rgba(232, 111, 42, 0.05);
+      }
+
+      .section-head {
+        display: grid;
+        gap: 8px;
+        margin-top: 28px;
+      }
+
+      .note {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .note strong {
+        color: var(--text);
+      }
+
+      .terminal-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 26px;
+        padding: 5px 9px;
+        border: 1px solid rgba(0, 245, 255, 0.24);
+        border-radius: 999px;
+        color: var(--blue);
       }
 
       img {
@@ -173,6 +213,27 @@
           <div class="swatch"><strong class="orange">Orange</strong><span>#E86F2A</span></div>
           <div class="swatch"><strong class="yellow">Yellow</strong><span>#FFD60A</span></div>
           <div class="swatch"><strong class="blue">Cyber Blue</strong><span>#00F5FF</span></div>
+        </div>
+      </section>
+
+      <section class="section-head" aria-labelledby="logo-ideas-title">
+        <div class="eyebrow"><span class="cursor"></span> Fresh logo ideas</div>
+        <h2 id="logo-ideas-title">Simple terminal marks from <span class="orange">P</span>, <span class="yellow">PI</span>, and <span class="blue">IQ</span>.</h2>
+        <p>
+          New routes for a sharper PantherIQ identity: fewer strokes, stronger silhouettes, and subtle CLI cues like
+          prompt carets, cursor blocks, rails, brackets, and command cells.
+        </p>
+      </section>
+
+      <section class="frame" aria-label="Fresh PantherIQ CLI logo ideas">
+        <img
+          src="./pantheriq-logo-ideas.png"
+          alt="Ten fresh PantherIQ CLI logo ideas using P, PI, IQ, Q, terminal prompts, cursor blocks, orange, yellow, and cyber blue"
+        />
+        <div class="note" aria-hidden="true">
+          <span class="terminal-pill">&gt; pick by number</span>
+          <strong>Start with silhouette.</strong>
+          <span>Then tune color balance, bilingual fit, and app-icon readability.</span>
         </div>
       </section>
     </main>
